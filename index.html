@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <title>Honouredev</title>
+    <link rel="stylesheet" href="index.css" type="text/css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <img src="images/mypassport.jpg" alt="profile-picture" data-testid="profile-Picture"  width="200px"/>
+        <h1 data-testid="fullName">MUTOHIR GANIYAH <q>HONOUREDEV</q></h1>
+        <h3 data-testid="jobTitle">Web-Developer</h3>
+        <p data-testid="shortBio"> I am a web developer/software engineer. Though a fullstack developer, but still currently learning and building myself to be the best amongst my peers. 
+            I work on personal and contracted projects.
+            I am open for job roles and internship opportunities.I am an upcoming Software Engineer about 1year of experience.
+           I have basic theoretical knowledge as well as production experience.</p>
+        <p id="location" data-testid="currentLocation">Oyo State, Nigeria</p>
+        <p data-testid="emailAddress"><em> ganiyahmutohir@gmail.com</em></p>
+        <div id="social" data-testid="socialLinks">
+            <a href="https://github.com/honouredev"><img src="images/github_icon.png" alt="github" /></a>
+            <a href="https://www.linkedin.com/in/ganiyah-mutohir"><img src="images/linkedin__icon.png" alt="linkdin"/></a>
+            <a href="https://wa.me/message/VXGIFDF27VJVM1"> <img src="images/icon-twitter.png" alt="twitter" /></a>
+            <a href="https://www.facebook.com/08142993532"><img src="images/icon-facebook.svg" alt="facebook" /></a>
+        </div>
+        <p id="newdate" data-testid="currentTimeUTC"></p>
+    </div>
+
+    <script >
+        let newDate = document.getElementById("newdate")
+        newDate.innerHTML = `UTC Time:  ` + new Date().toUTCString() ;
+        console.log({newDate})
+
+    </script>
+</body>
+</html>
